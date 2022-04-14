@@ -1,13 +1,39 @@
 {
   "pages":[
+    "pages/activities/activities",
+    "pages/message/message",
+    "pages/mine/mine",
     "pages/index/index",
     "pages/logs/logs"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#800080",
+    "navigationBarTitleText": "NJU志愿活动平台",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/activities/activities",
+      "text": "全部活动",
+      "iconPath": "icon/活动u.png",
+      "selectedIconPath": "icon/活动s.png"
+    },
+    {
+      "pagePath": "pages/message/message",
+      "text": "消息",
+      "iconPath": "icon/信息u.png",
+      "selectedIconPath": "icon/信息s.png"
+    },
+    {
+      "pagePath": "pages/mine/mine",
+      "text": "个人信息",
+      "iconPath": "icon/用户u.png",
+      "selectedIconPath": "icon/用户s.png"
+    }],
+    "color": "#cdcdcd",
+    "selectedColor": "#800080"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
